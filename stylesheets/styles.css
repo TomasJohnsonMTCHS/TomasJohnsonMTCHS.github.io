@@ -78,49 +78,43 @@ footer {
 	padding:20px;
 	padding-right:20px;
 	float:left;
-	width:58%;
 }
 
 #wrapper {
-    width: 240%;
+    width: 4000%;
+	height:600px;
     transform: translate3d(0, 0, 0);
 	transition: transform .5s ease-in-out;
 }
 .content {
+	max-width:1000px;
     float: left;
-    width: 60%;
     height: 600px;
-    white-space: normal;
-    background-repeat: no-repeat;
 }
 #itemOne {
     background-color: #ADFF2F;
-    background-image: url("//www.kirupa.com/images/blueSquare.png");
 }
 #itemTwo {
     background-color: #FF7F50;
-    background-image: url("//www.kirupa.com/images/yellowSquare.png");
 }
 #itemThree {
     background-color: #1E90FF;
-    background-image: url("//www.kirupa.com/images/pinkSquare.png");
 }
 #itemFour {
     background-color: #DC143C;
-    background-image: url("//www.kirupa.com/images/graySquare.png");
 }
 
 #contentContainer {
-    width: 60%;
+	width:1000px;
     height: 600px;
-    overflow: hidden;
-	margin:5% 20% 0% 20%;
+	margin:5% 30% 0% 20%;
 	position:relative;
+	overflow:hidden;
 }
 #navLinks {
     text-align: center;
-    width: 60%;
-	margin:0% 20% 0% 20%;
+    width: 1000px;
+	margin:0% 30% 0% 20%;
 	float:left;
 	
 }
