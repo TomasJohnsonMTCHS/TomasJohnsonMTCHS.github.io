@@ -25,6 +25,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family:sans-serif;
+	overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -41,3 +43,113 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+ /* --------------------------Webkit Scrooll Bar-------------------------- */
+ 
+::-webkit-scrollbar {
+    width: 8px;
+	background: rgba(0,0,0,0); 
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.8); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0.4); 
+}
+
+/*------------------------------------------------------------------------ */
+header {
+	top:0;
+	position:fixed;
+	width:100%;
+	background-color:#333;
+	padding: 5px;
+}
+
+footer {
+	bottom:0;
+	position:fixed;
+	width:100%;
+	background-color:#222;
+}
+
+.info {
+	padding:20px;
+	padding-right:20px;
+	float:left;
+	width:58%;
+}
+
+#wrapper {
+    width: 240%;
+    transform: translate3d(0, 0, 0);
+	transition: transform .5s ease-in-out;
+}
+.content {
+    float: left;
+    width: 60%;
+    height: 600px;
+    white-space: normal;
+    background-repeat: no-repeat;
+}
+#itemOne {
+    background-color: #ADFF2F;
+    background-image: url("//www.kirupa.com/images/blueSquare.png");
+}
+#itemTwo {
+    background-color: #FF7F50;
+    background-image: url("//www.kirupa.com/images/yellowSquare.png");
+}
+#itemThree {
+    background-color: #1E90FF;
+    background-image: url("//www.kirupa.com/images/pinkSquare.png");
+}
+#itemFour {
+    background-color: #DC143C;
+    background-image: url("//www.kirupa.com/images/graySquare.png");
+}
+
+#contentContainer {
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+	margin:5% 20% 0% 20%;
+	position:relative;
+}
+#navLinks {
+    text-align: center;
+    width: 60%;
+	margin:0% 20% 0% 20%;
+	float:left;
+	
+}
+    #navLinks ul {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        margin-top: 6px;
+    }
+        #navLinks ul li {
+            float: left;
+            text-align: center;
+            margin: 10px;
+            list-style: none;
+            cursor: pointer;
+            background-color: #CCCCCC;
+            padding: 5px;
+            border-radius: 50%;
+            border: black 5px solid;
+        }
+            #navLinks ul li:hover {
+                background-color: #FFFF00;
+            }
+            #navLinks ul li.active {
+                background-color: #333333;
+                color: #FFFFFF;
+                outline-width: 7px;
+            }
+                #navLinks ul li.active:hover {
+                    background-color: #484848;
+                    color: #FFFFFF;
+                }
