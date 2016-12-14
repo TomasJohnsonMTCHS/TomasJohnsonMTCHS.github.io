@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family:sans-serif;
-	overflow-x: hidden;
+	background: url(imgs/background-tile.jpg);
 }
 ol, ul {
 	list-style: none;
@@ -72,6 +72,7 @@ footer {
 	position:fixed;
 	width:100%;
 	background-color:#222;
+	height:30px;
 }
 
 .info {
@@ -81,16 +82,22 @@ footer {
 }
 
 #wrapper {
-    width: 4000%;
+    width: 7480px;
 	height:600px;
     transform: translate3d(0, 0, 0);
-	transition: transform .5s ease-in-out;
+	transition: transform 1.25s ease-in-out;
 }
+	
 .content {
-	max-width:1000px;
+	margin-right:80px;
+	width:1000px;
     float: left;
     height: 600px;
+	background-color: rgba(10,10,10, 0.7);
 }
+#itemStart {
+	background-color: rgba(10,10,10, 0.0);
+}		
 #itemOne {
     background-color: #ADFF2F;
 }
@@ -103,18 +110,21 @@ footer {
 #itemFour {
     background-color: #DC143C;
 }
+#itemFive {
+    background-color: #123456;
+}
 
 #contentContainer {
 	width:1000px;
     height: 600px;
-	margin:5% 30% 0% 20%;
 	position:relative;
 	overflow:hidden;
+	border: rgba(10,10,10, 0.5) solid 3px;
+	border-radius:3px;
 }
 #navLinks {
     text-align: center;
     width: 1000px;
-	margin:0% 30% 0% 20%;
 	float:left;
 	
 }
@@ -130,20 +140,25 @@ footer {
             margin: 10px;
             list-style: none;
             cursor: pointer;
-            background-color: #CCCCCC;
+            background-color: rgba(150,150,150, 0.7);
             padding: 5px;
             border-radius: 50%;
-            border: black 5px solid;
+            border:rgba(10,10,10, 0.3) solid 2px;
         }
             #navLinks ul li:hover {
-                background-color: #FFFF00;
+                background-color: rgba(50,100,230, 0.8);
             }
             #navLinks ul li.active {
-                background-color: #333333;
+                background-color: rgba(100,100,100, 0.8);
                 color: #FFFFFF;
                 outline-width: 7px;
             }
                 #navLinks ul li.active:hover {
-                    background-color: #484848;
+                    background-color: rgba(50,50,50, 0.8);
                     color: #FFFFFF;
                 }
+#slider {
+	width:1000px;
+	margin: 0 auto;
+	margin-top:10%;
+}

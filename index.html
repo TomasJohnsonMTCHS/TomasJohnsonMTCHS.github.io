@@ -14,13 +14,35 @@
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body>
+  <body onload="auto()">
+    <script>
+function auto(){
+var links = document.querySelectorAll(".itemLinks");
+var translateValue = "translate3d(" + position + ", 0px, 0)";
+    var position = "-1080px";
+ 
+    var translateValue = "translate3d(" + position + ", 0px, 0)";
+    wrapper.style.transform = translateValue;
+ 
+    link.classList.add("active");
+}
+</script>
     <header>
     <h1>Web Development Portfolio </h1>
     <h2>Tomas Johnson</h2>
     </header>
+	<div id="slider">
 	<div id="contentContainer">
 		<div id="wrapper">
+	<div id="itemStart" class="content">
+	<h3></h3>
+		<div>
+		<p></p>
+		<br/>
+		<p></p>
+		</div>
+	<div class="info">
+    </div></div>
     <div id="itemOne" class="content">
 	<div class="info">
 			<h3>Portfolio</h3>
@@ -57,15 +79,34 @@
 		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
 		</div>
     </div>
+	    <div id="itemFive" class="content">
+ 				<h3>Portfolio</h3>
+		<div>
+		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+		<br/>
+		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+		</div>
+    </div>
+	<div id="itemFive" class="content">
+ 				<h3>Portfolio</h3>
+		<div>
+		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+		<br/>
+		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+		</div>
+    </div>
 		</div>
 </div>
 <div id="navLinks">
     <ul>
-        <li class="itemLinks" data-pos="0"></li>
-        <li class="itemLinks" data-pos="-1000px"></li>
-        <li class="itemLinks" data-pos="-2000px"></li>
-        <li class="itemLinks" data-pos="-3000px"></li>
+        <li class="itemLinks" data-pos="-1080px"></li>
+        <li class="itemLinks" data-pos="-2160px"></li>
+        <li class="itemLinks" data-pos="-3240px"></li>
+		<li class="itemLinks" data-pos="-4320px"></li>
+		<li class="itemLinks" data-pos="-5400px"></li>
+		<li class="itemLinks" data-pos="-6480px"></li>
     </ul>
+</div>
 </div>
 <script>
 var links = document.querySelectorAll(".itemLinks");
@@ -104,6 +145,7 @@ function changePosition(link) {
  
     link.classList.add("active");
 }
+
 </script>
     <footer>
     Contact Copyright Portfolio 1 2 3 4 5
