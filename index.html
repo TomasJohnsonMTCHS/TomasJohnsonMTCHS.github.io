@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Tomas Johnson</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    </script>	
+    </script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -13,144 +14,163 @@
     <link rel="stylesheet" href="stylesheets/ie.css">
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  </head>
-  <body onload="auto()">
-    <script>
-function auto(){
-var links = document.querySelectorAll(".itemLinks");
-var translateValue = "translate3d(" + position + ", 0px, 0)";
-    var position = "-1080px";
- 
-    var translateValue = "translate3d(" + position + ", 0px, 0)";
-    wrapper.style.transform = translateValue;
- 
-    link.classList.add("active");
-}
-</script>
-    <header>
-    <h1>Web Development Portfolio </h1>
-    <h2>Tomas Johnson</h2>
-    </header>
-	<div id="slider">
-	<div id="contentContainer">
-		<div id="wrapper">
-	<div id="itemStart" class="content">
-	<h3></h3>
-		<div>
-		<p></p>
-		<br/>
-		<p></p>
-		</div>
-	<div class="info">
-    </div></div>
-    <div id="itemOne" class="content">
-	<div class="info">
-			<h3>Portfolio</h3>
-		<div>
-		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
-		<br/>
-		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
-		</div>
-    </div>
-	</div>
-    <div id="itemTwo" class="content">
-				<h3>Portfolio</h3>
-		<div>
-		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
-		<br/>
-		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
-		</div>
-    </div>
-    <div id="itemThree" class="content">
-	<div class="info">
- 				<h3>Portfolio</h3>
-		<div>
-		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
-		<br/>
-		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
-		</div>
-		</div>
-    </div>
-    <div id="itemFour" class="content">
- 				<h3>Portfolio</h3>
-		<div>
-		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
-		<br/>
-		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
-		</div>
-    </div>
-	    <div id="itemFive" class="content">
- 				<h3>Portfolio</h3>
-		<div>
-		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
-		<br/>
-		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
-		</div>
-    </div>
-	<div id="itemFive" class="content">
- 				<h3>Portfolio</h3>
-		<div>
-		<p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
-		<br/>
-		<p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
-		</div>
-    </div>
-		</div>
-</div>
-<div id="navLinks">
-    <ul>
-        <li class="itemLinks" data-pos="-1080px"></li>
-        <li class="itemLinks" data-pos="-2160px"></li>
-        <li class="itemLinks" data-pos="-3240px"></li>
-		<li class="itemLinks" data-pos="-4320px"></li>
-		<li class="itemLinks" data-pos="-5400px"></li>
-		<li class="itemLinks" data-pos="-6480px"></li>
-    </ul>
-</div>
-</div>
-<script>
-var links = document.querySelectorAll(".itemLinks");
-var wrapper = document.querySelector("#wrapper");
+</head>
 
-var activeLink = 0;
+<body onload="auto()">
+    <main>
+        <script>
+            function auto() {
+                var links = document.querySelectorAll(".itemLinks");
+                var translateValue = "translate3d(" + position + ", 0px, 0)";
+                var position = "-1080px";
 
-for (var i = 0; i < links.length; i++) {
-    var link = links[i];
-    link.addEventListener('click', setClickedItem, false);
-     link.itemID = i;
-}
- 
-links[activeLink].classList.add("active");
- 
-function setClickedItem(e) {
-    removeActiveLinks();
- 
-    var clickedLink = e.target;
-    activeLink = clickedLink.itemID;
- 
-    changePosition(clickedLink);
-}
- 
-function removeActiveLinks() {
-    for (var i = 0; i < links.length; i++) {
-        links[i].classList.remove("active");
-    }
-}
- 
-function changePosition(link) {
-    var position = link.getAttribute("data-pos");
- 
-    var translateValue = "translate3d(" + position + ", 0px, 0)";
-    wrapper.style.transform = translateValue;
- 
-    link.classList.add("active");
-}
+                var translateValue = "translate3d(" + position + ", 0px, 0)";
+                wrapper.style.transform = translateValue;
+            }
+        </script>
+        <header>
+            <h1>Web Development Portfolio </h1>
+            <h2>Tomas Johnson</h2>
+        </header>
+        <div id="slider">
+		<p class="slidetitle">Web Portfolio</p>
+            <div id="contentContainer">
+                <div id="wrapper">
+                    <div id="itemStart" class="content">
+					<div class="info">
+                        <h3></h3>
+                        <div>
+                            <p></p>
+                            <br/>
+                            <p></p>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="itemOne" class="content">
+                        <div class="info">
+                            <h3>Portfolio</h3>
+                            <div>
+                                <p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+                                <br/>
+                                <p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="itemTwo" class="content">
+					<div class="info">
+                        <h3>Portfolio</h3>
+                        <div>
+                            <p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+                            <br/>
+                            <p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+                        </div>
+						</div>
+                    </div>
+                    <div id="itemThree" class="content">
+					<div class="info">
+                            <h3>Portfolio</h3>
+                            <div>
+                                <p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+                                <br/>
+                                <p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+                            </div>
+							</div>
+                    </div>
+                    <div id="itemFour" class="content">
+					<div class="info">
+                        <h3>Portfolio</h3>
+                        <div>
+                            <p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+                            <br/>
+                            <p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+                        </div>
+						</div>
+                    </div>
+                    <div id="itemFive" class="content">
+					<div class="info">
+                        <h3>Portfolio</h3>
+                        <div>
+                            <p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+                            <br/>
+                            <p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+                        </div>
+						</div>
+                    </div>
+                    <div id="itemSix" class="content">
+					<div class="info">
+                        <h3>Portfolio</h3>
+                        <div>
+                            <p>This portfolio was created as a way to display personal skills that I have improved uppon over these past few years. You will be able to see my gradual progression in CSS, HTML, and javascript expirience. You will find Webstites, Javascript Projects, and Media projects in this section.</p>
+                            <br/>
+                            <p>These are projects that I believe show my progression in this field, and how far I have come within the programming pathway.</p>
+                        </div>
+						</div>
+                    </div>
+                </div>
+            </div>
+            <div id="navLinks">
+                <ul>
+                    <li class="itemLinks" data-pos="-1080px"></li>
+                    <li class="itemLinks" data-pos="-2160px"></li>
+                    <li class="itemLinks" data-pos="-3240px"></li>
+                    <li class="itemLinks" data-pos="-4320px"></li>
+                    <li class="itemLinks" data-pos="-5400px"></li>
+                    <li class="itemLinks" data-pos="-6480px"></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            var links = document.querySelectorAll(".itemLinks");
+            var wrapper = document.querySelector("#wrapper");
 
-</script>
-    <footer>
-    Contact Copyright Portfolio 1 2 3 4 5
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
- 
-  </body>
+            var activeLink = 0;
+
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i];
+                link.addEventListener('click', setClickedItem, false);
+                link.itemID = i;
+            }
+
+            links[activeLink].classList.add("active");
+
+            function setClickedItem(e) {
+                removeActiveLinks();
+
+                var clickedLink = e.target;
+                activeLink = clickedLink.itemID;
+
+                changePosition(clickedLink);
+            }
+
+            function removeActiveLinks() {
+                for (var i = 0; i < links.length; i++) {
+                    links[i].classList.remove("active");
+                }
+            }
+
+            function changePosition(link) {
+                var position = link.getAttribute("data-pos");
+
+                var translateValue = "translate3d(" + position + ", 0px, 0)";
+                wrapper.style.transform = translateValue;
+
+                link.classList.add("active");
+            }
+        </script>
+        <footer>
+		<ul>
+		<li class="footnote">Portfolio</li> |
+		<li class="footnote">Section 1</li> |
+		<li class="footnote">Section 2</li> |
+		<li class="footnote">Section 3</li> |
+		<li class="footnote">Section 4</li> |
+		<li class="footnote">Section 5</li> |
+		<li class="footnote">Contact</li>
+		</ul>
+            Copyright 2016 Tomas Johnson
+        </footer>
+        <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    </main>
+</body>
+
 </html>

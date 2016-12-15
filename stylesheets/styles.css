@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family:sans-serif;
-	background: url(imgs/background-tile.jpg);
+	background-image:url(imgs/2.png);
 }
 ol, ul {
 	list-style: none;
@@ -64,7 +64,18 @@ header {
 	position:fixed;
 	width:100%;
 	background-color:#333;
+	color:#ccc;
 	padding: 5px;
+	padding-left:20px;
+}
+
+header h1 {
+	font-size:20px;
+}
+
+header h2 {
+	color:#aaa;
+	font-size:15px;
 }
 
 footer {
@@ -72,17 +83,29 @@ footer {
 	position:fixed;
 	width:100%;
 	background-color:#222;
-	height:30px;
+	color:#bbb;
+	height:auto;
+	text-align:center;
 }
 
+.footnote {
+	display:inline-block;
+	font-size:15px;
+	color:#999
+}
+/*-------------------------------------*/
+.slidetitle {
+	text-align:center;
+	font-size:25px;
+	color:#333;
+}
 .info {
 	padding:20px;
-	padding-right:20px;
 	float:left;
 }
 
 #wrapper {
-    width: 7480px;
+    width: 7560px;
 	height:600px;
     transform: translate3d(0, 0, 0);
 	transition: transform 1.25s ease-in-out;
@@ -93,7 +116,7 @@ footer {
 	width:1000px;
     float: left;
     height: 600px;
-	background-color: rgba(10,10,10, 0.7);
+	background-color: rgba(10,10,10, 0.3);
 }
 #itemStart {
 	background-color: rgba(10,10,10, 0.0);
@@ -111,6 +134,10 @@ footer {
     background-color: #DC143C;
 }
 #itemFive {
+	
+
+}
+#itemSix {
     background-color: #123456;
 }
 
@@ -119,7 +146,8 @@ footer {
     height: 600px;
 	position:relative;
 	overflow:hidden;
-	border: rgba(10,10,10, 0.5) solid 3px;
+	border-top: rgba(10,10,10, 0.5) solid 5px;
+	border-bottom: rgba(10,10,10, 0.5) solid 5px;
 	border-radius:3px;
 }
 #navLinks {
@@ -140,7 +168,7 @@ footer {
             margin: 10px;
             list-style: none;
             cursor: pointer;
-            background-color: rgba(150,150,150, 0.7);
+            background-color: rgba(175,175,175, 0.7);
             padding: 5px;
             border-radius: 50%;
             border:rgba(10,10,10, 0.3) solid 2px;
@@ -149,16 +177,16 @@ footer {
                 background-color: rgba(50,100,230, 0.8);
             }
             #navLinks ul li.active {
-                background-color: rgba(100,100,100, 0.8);
+                background-color: rgba(50,50,50, 0.8);
                 color: #FFFFFF;
                 outline-width: 7px;
             }
                 #navLinks ul li.active:hover {
-                    background-color: rgba(50,50,50, 0.8);
+                    background-color: rgba(10,10,10, 0.8);
                     color: #FFFFFF;
                 }
 #slider {
 	width:1000px;
 	margin: 0 auto;
-	margin-top:10%;
+	margin-top:7%;
 }
