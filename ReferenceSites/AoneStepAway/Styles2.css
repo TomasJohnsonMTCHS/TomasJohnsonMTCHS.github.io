@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+/*---------------------------------------------------------------*/
+body {
+	line-height: 1;
+	background-image:url(img/night-trees-stars2.jpg);
+	/*background-color:rgb (0,0,0)*/
+}
+
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header {
+	Background-color:#4A4A4A;
+	background-image:url(img/BackGround.jpg);
+	height:200px;
+}
+
+header h1 {
+	color:#E0E0E0;
+	text-align:center;
+	height:200px;
+	font-family: Electrolize, sans-serif;
+	font-size:5em;
+	letter-spacing:-5px;
+	padding-top:80px;
+}
+/*----------------------------------------------------------*/
+body ul, il, main, nav, a{
+	margin:0;
+	padding:0;
+}
+
+nav {
+	background-color:#EFEFEF;
+	border-top:#00000 solid 2px;
+}
+nav a {
+	display:block;
+	height:25px;
+	padding-top:5px;
+	font-family: Electrolize, sans-serif;
+}
+
+li {
+	display:inline-block;
+	text-align:center;
+	width:196px;
+	background-color:#1659A0;
+	color:#FFFFFF;
+}
+
+.Border {
+	border-right: 5px solid #FFFFFF;
+}
+
+li:hover {
+	background-color:#7A7A7A;
+}
+
+a:hover {  
+		text-decoration:none;
+		color:#D5D5D5;
+		background-color:#2A6CB3;
+}
+
+a:link {
+	text-decoration:none;
+	color:#BCBCBC;
+}
+
+a:visited {
+		text-decoration:none;
+	color:#BCBCBC;
+}
+/*----------------------------------------------------------*/
+section {
+	background-color:rgba(55,77,121,255);
+	width:750px;
+	float:left;
+	font-size:20px;
+}
+
+article {
+	text-align:center;
+	font-size:20px;
+	font-family: Electrolize, sans-serif;
+	background-color:rgba(60,60,60,0.5);
+	width:980px;
+	float:right;
+	margin: 10px;
+	padding: 20px 0 20px 0;
+	color:#ACACAC;
+}
+
+aside {
+	background-color:#00EBFF; 
+	width:250px;
+	margin-left:750px;
+
+}
+
+.LineSpace {
+	padding-top: 14px;
+	padding-bottom:2px;
+}
+
+section p {
+	text-align:center;
+	font-family: Electrolize, sans-serif;
+		
+}
+.HomeSection {
+	background-color:rgba(120,120,120,0.7);
+	margin-top:20px;
+	margin-left:110px;
+	margin-right:110;
+	color:#ABABAB;
+	width:780px;
+	float:left;	
+	padding-bottom: 20px;
+}
+
+.title{
+background: -moz-linear-gradient(top,  rgba(22,89,160,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(22,89,160,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(22,89,160,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(22,89,160,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(22,89,160,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(22,89,160,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1659a0', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+	color:#DFDFDF;
+	width:1000px;
+	margin-left:0px;
+	font-size:30px;
+}
+#info {
+	text-align:left;
+	background-color:rgba(40,40,40,0.5);
+	width:980px;
+	pading:20px, 0, 20px,0;
+	margin: 10px;
+	font-size:15px;
+	color:#BFBFBF;
+	font-family: Electrolize, sans-serif;
+	text-decoration:none;
+}
+/*----------------------------------------------------------*/
+main {
+	width:1000px;
+	margin:auto;
+}
+
+footer {
+	background-color:rgba(50,50,50,0.5);
+	width:1000px;
+	clear:both;
+	font-size:10px;
+	color:#9F9F9F;
+}
+
+.input_text {
+	margin:0 0 20px 20px;
+	width:200px;
+}
+label {
+	padding-right: -200px;
+	float:left;
+	width:150px;
+}
+input:required:invalid {
+	border: 3px solid rgba(10,30, 160, 0.9);
+}	
+
+.extra_input {
+	display:none;
+}

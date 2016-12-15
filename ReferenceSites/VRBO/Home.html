@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript">
+        function toggle() {
+            var ele = document.getElementById("toggleText");
+            var text = document.getElementById("displayText");
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+            } else {
+                ele.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var q = today.getHours();
+            var h = today.getHours();
+
+            if (h > 12) {
+                h = h - 12
+            }
+            var m = today.getMinutes();
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var s = today.getSeconds();
+            if (s < 10) {
+                s = "0" + s;
+            }
+
+            var d = new Date();
+            var month = new Array();
+            month[0] = "Jan";
+            month[1] = "Feb";
+            month[2] = "Mar";
+            month[3] = "Apr";
+            month[4] = "May";
+            month[5] = "Jun";
+            month[6] = "Jul";
+            month[7] = "Aug";
+            month[8] = "Sep";
+            month[9] = "Oct";
+            month[10] = "Nov";
+            month[11] = "Dec";
+            var DM = month[d.getMonth()];
+
+            var DD = today.getDate();
+            var DY = today.getFullYear();
+
+            if (q < 13) {
+                q = h + ":" + m + ":" + s + " am";
+            } else {
+                q = h + ":" + m + ":" + s + " pm";
+            }
+            document.getElementById('clock').innerHTML = DM + "/" + DD + "/" + DY + " " + q;
+            var t = setTimeout(startTime, 100);
+
+        }
+    </script>
+    <title>PuertoRicoCondos</title>
+    <link rel="stylesheet" type="text/css" href="stylecondo.css">
+
+</head>
+
+<body onLoad="startTime()">
+
+    <div>
+        <main>
+            <header>
+                <h1>Puerto Rico Condos</h1>
+                <img src="Imgs/logo.jpg" alt="Beach Veiw 1" width="150" height="100" />
+                <!--Insert extended beach logo here-->
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Rooms</a>
+                        <ul>
+                            <li><a href="Rooms.html">Living Room</a></li>
+                            <li><a href="BedRoom.html">Bed Room</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Location.html"> Location </a></li>
+                    <li><a id="displayText" href="javascript:toggle();">contact</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article class="ArticleSlide">
+                    <h2>San Juan Overlook</h2>
+                    <div class="css-slideshow">
+                        <figure>
+                            <img src="Imgs/HomeSlide/1.jpg" alt="Beach Veiw 1" width="490" height="370" />
+                            <figcaption>Favorite moment of the day as dusk sets in.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Imgs/HomeSlide/2.jpg" alt="Beach Veiw 2" width="490" height="370" />
+                            <figcaption>Each bedroom has a direct view over the beach and the ocean.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Imgs/HomeSlide/3.jpg" alt="Beach Veiw 3" width="490" height="370" />
+                            <figcaption>Serve breakfast on the balcony and start a new day. Jet skis available on beach.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Imgs/HomeSlide/4.jpg" alt="Beach Veiw 4" width="490" height="370" />
+                            <figcaption>Isla Verde beach mid-week, without the Sunday crowd. That's our pool on right.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="Imgs/HomeSlide/5.jpg" alt="Beach Veiw 5" width="490" height="370" />
+                            <figcaption>The end of another fun-filled day in the Caribbean.</figcaption>
+                        </figure>
+                    </div>
+                </article>
+                <article class="articletext">
+                    <p>Our Ocean View apartment puts you at the top of the world overlooking the entire 2-mile Isla Verde beach. Luxuriously appointed, fully air conditioned 2 bedroom/2 bath property w. sofa-bed in living area easily accommodates 4-6. Enjoy our state-of-the-art video and stereo system. Open-air kitchen, fully apppointed, is made for entertaining. </p>
+
+                    <p>Lobby to the beach is all of 75 feet! Fresh water 25-meter full-sized pool is about same distance.</p>
+
+                    <p>Building has security 24/7.</p>
+
+                    <p>Less than 10 minutes from airport, you can be in the ocean less than 30 minutes after your plane lands.</p>
+
+                    <p>Public transport directly in front, to center of city and Old San Juan. Car rental across the street, we have 1 covered parking space.</p>
+
+                    <p>Grocery shopping, pharmacy, restaurants and bars, casinos all within short walk.</p>
+
+                    <p>Kite surfing lessons, jet ski rentals, umbrella beach chair rentals available right on the beach.</p>
+
+                    <p>Includes wifi, desk, scanner-printer.</p>
+
+                    <p>BEST FEATURE: Watching a tropical sunset from the terrace.</p>
+                </article>
+            </section>
+            <aside id="toggleText" style="display: none">
+                <div>
+                    <div Id="clock"></div>
+                    <div>1 - 7876678415</div>
+                    <div>
+                        <p class="asidetitle">Contact Us</p>
+                        <form name="ContactForm" action="formail.php" method="post">
+                            <p>
+                                <label>Full Name: </label>
+                                <input type="text" name="fullName" class="input_text" placeholder="Name" required>
+                            </p>
+                            <p>
+                                <label> Email: </label>
+                                <input type="email" name="EmailAddress" class="input_text" required>
+                            </p>
+                            <p>
+                                <label> Phone: </label>
+                                <input type="number" name="PhoneNumber" class="input_text" required>
+                            </p>
+                            <p>
+                                <label> Adults: </label>
+                                <input type="number" name="Adults" class="input_number" required>
+                            </p>
+                            <p>
+                                <label> Children: </label>
+                                <input type="number" name="Children" class="input_number" required>
+                            </p>
+                            <p>
+                                <label> Questions or Comments?: </label>
+                                <textarea name="Comment" class="input_text"></textarea>
+                            </p>
+                            <p class="extra_input"> D0 n0t f1ll 3v3r
+                                <label> Address: </label>
+                                <textarea name="Address" class="input_text"></textarea>
+                            </p>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <footer>
+                © copyright 2015 Peurto-Rico-Condo.com
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

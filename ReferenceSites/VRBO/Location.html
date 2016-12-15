@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+    <script language="javascript">
+        function toggle() {
+            var ele = document.getElementById("toggleText");
+            var text = document.getElementById("displayText");
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+            } else {
+                ele.style.display = "block";
+            }
+        }
+
+    </script>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var q = today.getHours();
+            var h = today.getHours();
+
+            if (h > 12) {
+                h = h - 12
+            }
+            var m = today.getMinutes();
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var s = today.getSeconds();
+            if (s < 10) {
+                s = "0" + s;
+            }
+
+            var d = new Date();
+            var month = new Array();
+            month[0] = "Jan";
+            month[1] = "Feb";
+            month[2] = "Mar";
+            month[3] = "Apr";
+            month[4] = "May";
+            month[5] = "Jun";
+            month[6] = "Jul";
+            month[7] = "Aug";
+            month[8] = "Sep";
+            month[9] = "Oct";
+            month[10] = "Nov";
+            month[11] = "Dec";
+            var DM = month[d.getMonth()];
+
+            var DD = today.getDate();
+            var DY = today.getFullYear();
+
+            if (q < 13) {
+                q = h + ":" + m + ":" + s + " am";
+            } else {
+                q = h + ":" + m + ":" + s + " pm";
+            }
+            document.getElementById('clock').innerHTML = DM + "/" + DD + "/" + DY + " " + q;
+            var t = setTimeout(startTime, 100);
+
+        }
+
+    </script>
+    <title>PuertoRicoCondos</title>
+    <link rel="stylesheet" type="text/css" href="stylecondo.css">
+
+</head>
+
+<body onLoad="startTime()">
+
+    <div>
+        <main>
+            <header>
+                <h1>Puerto Rico Condos</h1><img src="Imgs/logo.jpg"  alt="Beach Veiw 1" width="150" height="100" />
+                <!--Insert extended beach logo here-->
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Rooms</a>
+                        <ul>
+                            <li><a href="Rooms.html">Living Room</a></li>
+                            <li><a href="BedRoom.html">Bed Room</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Location.html"> Location </a></li>
+                    <li><a id="displayText" href="javascript:toggle();">contact</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article class="ArticleSlide">
+                    <h2>Location</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3784.88629686501!2d-66.024156!3d18.443470999999995!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1450298785358" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </article>
+                <article class="articletext">
+                    <h2>Places to Near By:</h2>
+
+                    <p>2 MilesNearest Airport</p>
+                    <p>Luis Munoz Marin International Airport</p>
+                    <p>50 MetresNearest Barpub</p>
+                    <p>Several</p>
+                    <p>10 MilesNearest Golf</p>
+                    <p>Dorado (West of S.J.) or Rio Grande (East of S.J.)</p>
+                    <p>0.25 MilesNearest Motorway</p>
+                    <p>Baldorioty de Castro Avenue (Route 26)</p>
+                    <p>50 MetresNearest Restaurant</p>
+                    <p>Over 30, fast food, sushi, Metropol, Ruth's Chris</p>
+                    <p>20 MetresNearest Beach</p>
+                    <p>Isla Verde Beach, at your feet</p>
+                </article>
+            </section>
+            <aside id="toggleText" style="display: none">
+                <div>
+                    <div Id="clock"></div>
+                    <div>1 - 7876678415</div>
+                    <div>
+                        <p class="asidetitle">Contact Us</p>
+                        <form name="ContactForm" action="formail.php" method="post">
+                            <p>
+                                <label>Full Name: </label>
+                                <input type="text" name="fullName" class="input_text" placeholder="Name" required>
+                            </p>
+                            <p>
+                                <label> Email: </label>
+                                <input type="email" name="EmailAddress" class="input_text" required>
+                            </p>
+                            <p>
+                                <label> Phone: </label>
+                                <input type="number" name="PhoneNumber" class="input_text" required>
+                            </p>
+                            <p>
+                                <label> Adults: </label>
+                                <input type="number" name="Adults" class="input_number" required>
+                            </p>
+                            <p>
+                                <label> Children: </label>
+                                <input type="number" name="Children" class="input_number" required>
+                            </p>
+                            <p>
+                                <label> Questions or Comments?: </label>
+                                <textarea name="Comment" class="input_text"></textarea>
+                            </p>
+                            <p class="extra_input"> D0 n0t f1ll 3v3r
+                                <label> Address: </label>
+                                <textarea name="Address" class="input_text"></textarea>
+                            </p>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <footer>
+               © copyright 2015 Peurto-Rico-Condo.com
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

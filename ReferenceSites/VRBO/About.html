@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<head>
+    <meta charset="UTF-8">
+    <script language="javascript">
+        function toggle() {
+            var ele = document.getElementById("toggleText");
+            var text = document.getElementById("displayText");
+            if (ele.style.display == "block") {
+                ele.style.display = "none";
+            } else {
+                ele.style.display = "block";
+            }
+        }
+    </script>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var q = today.getHours();
+            var h = today.getHours();
+
+            if (h > 12) {
+                h = h - 12
+            }
+            var m = today.getMinutes();
+            if (m < 10) {
+                m = "0" + m;
+            }
+            var s = today.getSeconds();
+            if (s < 10) {
+                s = "0" + s;
+            }
+
+            var d = new Date();
+            var month = new Array();
+            month[0] = "Jan";
+            month[1] = "Feb";
+            month[2] = "Mar";
+            month[3] = "Apr";
+            month[4] = "May";
+            month[5] = "Jun";
+            month[6] = "Jul";
+            month[7] = "Aug";
+            month[8] = "Sep";
+            month[9] = "Oct";
+            month[10] = "Nov";
+            month[11] = "Dec";
+            var DM = month[d.getMonth()];
+
+            var DD = today.getDate();
+            var DY = today.getFullYear();
+
+            if (q < 13) {
+                q = h + ":" + m + ":" + s + " am";
+            } else {
+                q = h + ":" + m + ":" + s + " pm";
+            }
+            document.getElementById('clock').innerHTML = DM + "/" + DD + "/" + DY + " " + q;
+            var t = setTimeout(startTime, 100);
+
+        }
+    </script>
+    <title>PuertoRicoCondos</title>
+    <link rel="stylesheet" type="text/css" href="stylecondo.css">
+
+</head>
+
+<body onLoad="startTime()">
+
+    <div>
+        <main>
+            <header>
+                <h1>Puerto Rico Condos</h1><img src="Imgs/logo.jpg" alt="Beach Veiw 1" width="150" height="100" />
+                <!--Insert extended beach logo here-->
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="#">Rooms</a>
+                        <ul>
+                            <li><a href="Rooms.html">Living Room</a></li>
+                            <li><a href="BedRoom.html">Bed Room</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Location.html"> Location </a></li>
+                    <li><a id="displayText" href="javascript:toggle();">contact</a></li>
+                </ul>
+            </nav>
+            <section>
+                <article class="ArticleAbout">
+                    <h2> San Juan Overlook - About </h2>
+
+                    <h2 class="listtitle">Property Type</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li> Apartment</li>
+                            <li> On floor 16 </li>
+                            <li>800 sq. ft. </li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Accommodation Type</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Vacation Rental</li>
+                        </ul>
+                    </div>
+                    <h2 class="listtitle">Meals</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Guests Provide Their Own Meals</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Onsite Services</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Housekeeper Optional</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Suitability</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Minimum Age Limit For Renters:</li>
+                            <li>Main renter must be over 25 years unless waiver is granted. Please ask.</li>
+                            <li>Singles</li>
+                            <li>Children Welcome</li>
+                            <li>Non Smoking Only</li>
+                            <li>Pets Not Allowed</li>
+                            <li>Wheelchair Accessible</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Bedrooms: 2 Bedrooms, Sleeps 6, Beds for 4-6</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Master Bedroom: 1 queen</li>
+                            <li>Includes en-suite bathroom, work area with scanner-printer.</li>
+                            <li>Bedroom 2: 1 queen</li>
+                            <li>Sofa-bed: 2 sleep sofa /futon</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Bathrooms: 2 Bathrooms</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Master Bath: toilet, shower</li>
+                            <li>2nd Bathroom: toilet, shower</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Entertainment</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Books</li>
+                            <li>CD Player</li>
+                            <li>DVD Player</li>
+                            <li>Music Library</li>
+                            <li>Satellite / Cable</li>
+                            <li>Stereo</li>
+                            <li>Television</li>
+                            <li>Toys</li>
+                            <li>Video Library</li>
+                        </ul>
+                    </div>
+
+                    <h2 class="listtitle">Theme</h2>
+                    <div class="wrapper">
+                        <ul class="tablelist">
+                            <li>Adventure</li>
+                            <li>Family</li>
+                            <li>Historic</li>
+                            <li>Romantic</li>
+                            <li>Sports & Activities</li>
+                            <li>Tourist Attractions </li>
+                        </ul>
+                    </div>
+                    <h3>Notes:</h3>
+
+                    <p>Cancellation Policy:</p>
+
+                    <p>More than 60 days before arrival: full refund.</p>
+
+                    <p>Less than 60 days, more than 30 days before arrival: all monies refunded except deposit.</p>
+
+                    <p>Less than 30 days before arrival: we make effort to re-book the dates. If unable to re-book we refund deposit and cleaning fees. If able to re-book you forfeit deposit and difference in rental rates, we refund the balance.</p>
+
+                    <p>Payments accepted online: VISA, MasterCard, American Express, Discover, PayPal</p>
+
+                    <p>Deposit holds the reservation.</p>
+
+                    <p>Pay 50% 60 days prior to arrival.</p>
+
+                    <p>Pay balance 30 days prior to arrival.</p>
+
+                    <p>See some empty dates in the next 30 days?</p>
+
+                    <p>Do they fit your schedule?</p>
+
+                    <p>Give us a call and make us a reasonable offer, you might be pleasantly surprised!</p>
+                </article>
+                <article class="articletext">
+                    <h2>Fees</h2>
+                    <table>
+                        <tr class="tabletitle">
+                            <td>Dates</td>
+                            <td>Nightly</td>
+                            <td>Weekly</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Early Winter 2015</h4>
+                                <p>Dec 9 - Dec 18</p>
+                            </td>
+                            <td>$210</td>
+                            <td>$1,260</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Winter 2015 - 2016</h4>
+                                <p>Dec 19 - Apr 20, 2016</p>
+                            </td>
+                            <td>$285</td>
+                            <td>$1710</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Spring 2016</h4>
+                                <p>Apr 21 - May 18, 2016</p>
+                            </td>
+                            <td>$235</td>
+                            <td>$1,410</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Summer 2016</h4>
+                                <p>May 19 - Aug 30, 2016</p>
+                            </td>
+                            <td>$195</td>
+                            <td>$1,170</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h4>Late Summer 2016</h4>
+                                <p>Aug 31 - Sep 29, 2016</p>
+                            </td>
+                            <td>$175</td>
+                            <td>$1,050</td>
+                        </tr>
+
+
+
+                    </table>
+                </article>
+            </section>
+            <aside id="toggleText" style="display: none">
+                <div>
+                    <div Id="clock"></div>
+                    <div>1 - 7876678415</div>
+                    <div>
+                        <p class="asidetitle">Contact Us</p>
+                        <form name="ContactForm" action="formail.php" method="post">
+                            <p>
+                                <label>Full Name: </label>
+                                <input type="text" name="fullName" class="input_text" placeholder="Name" required>
+                            </p>
+                            <p>
+                                <label> Email: </label>
+                                <input type="email" name="EmailAddress" class="input_text" required>
+                            </p>
+                            <p>
+                                <label> Phone: </label>
+                                <input type="number" name="PhoneNumber" class="input_text" required>
+                            </p>
+                            <p>
+                                <label> Adults: </label>
+                                <input type="number" name="Adults" class="input_number" required>
+                            </p>
+                            <p>
+                                <label> Children: </label>
+                                <input type="number" name="Children" class="input_number" required>
+                            </p>
+                            <p>
+                                <label> Questions or Comments?: </label>
+                                <textarea name="Comment" class="input_text"></textarea>
+                            </p>
+                            <p class="extra_input"> D0 n0t f1ll 3v3r
+                                <label> Address: </label>
+                                <textarea name="Address" class="input_text"></textarea>
+                            </p>
+                            <input type="submit">
+                        </form>
+                    </div>
+                </div>
+            </aside>
+            <footer>
+                © copyright 2015 Peurto-Rico-Condo.com
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+html, body {
+    width:100%;
+    min-height:100%;
+}
+/*---------------------------------------------------------------*/
+body {
+	line-height: 1;
+    background-image:url(img/redcicuit2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+ol, ul {
+	list-style: none;
+}
+
+body {
+    background-color: #4a4a4a;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#headingtxt {
+	font-size:3em;
+    height:50px;
+	background-color:#222;
+	color:#cdcdcd;
+	font-family:sans-serif;
+	letter-spacing:-2px;
+    text-align:center;
+    
+}
+
+header {
+	position:fixed;
+    width:100%;
+    top:0;
+}
+
+.divnav {
+    position:fixed;
+    left:0;
+    top:0;
+    text-align: center;
+    background-color: #222;
+    font-family: Electrolize, sans-serif;
+    width:50px;
+    height:50px;
+}
+
+.divnav:hover {  
+	text-decoration:none;
+	color:#DDD;
+}
+/*----------------------------------------------------------*/
+
+nav {
+	float:left;	
+    width:150px;
+    min-width:125px;
+}
+
+nav ul {
+	list-style:none;
+	background-color:rgba(187,28,36,0.65);
+    border: solid 2px rgba(255,48,56,0.85);
+    top:-3px;
+}
+
+nav .a {
+	padding: 20px 0 20px 0;
+	text-align:center;
+	margin:inherit;
+	display:block;
+	list-style:none;
+    font-family: Electrolize, sans-serif;
+	color:#EEE;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+nav .a:hover {  
+	text-decoration:none;
+	color:#FFF;
+	background-color:rgba(235,2,0,0.85);
+}
+
+a:link {
+	text-decoration:none;
+	color:#eee;
+}
+
+a:visited {
+	text-decoration:none;
+	color:#eee;
+}
+
+nav ul ul {
+    background-color:rgba(50,50,50,0.95);
+	width:145px;
+    height:200px;
+    overflow-y: scroll;
+    border:none;
+}
+
+nav ul ul li {
+	position:relative;
+    height: 20px;
+
+}
+nav ul ul li a {
+	color:#EEE;
+    text-align:left;
+    padding-left:15px;
+	margin:inherit;
+	display:block;
+	list-style:none;
+    font-family: Electrolize, sans-serif;
+	text-decoration:none;
+}
+
+nav ul {
+	position:relative;
+	padding:inherit;
+}
+
+nav ul ul a:hover {  
+	text-decoration:none;
+	color:#FFF;
+	background-color:rgba(60,60,60,0.95);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius:1px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,1); 
+    background-color:rgba(40, 40, 40, 0.7);
+}
+/*---------------------------------------------------------------*/
+   article{
+    margin:auto;
+    line-height: 30px;
+    margin-top: 100px;
+    padding:10px;
+	font-size: 15px;
+	background-color:rgba(157,0,16,0.65);
+    border: solid 2px rgba(205,8,6,0.85);
+	font-family: Electrolize, sans-serif;
+    color:#ABAbAb;
+    font-size:16px;
+    width:1000px;
+}
+
+Article h2{
+    font-size: 25px;
+    color:#CCC;
+    padding-bottom: 20px;
+}
+Article h3{
+    font-size: 17px;
+    color:#BDBDBD;
+    padding-bottom: 10px;
+}
+
+article p {
+    padding-bottom: 10px;
+}
+
+Article .end{
+    font-size: 15px;
+    color:#B9B9B9;
+    padding-bottom: 50px;
+}
+article ol {
+    list-style: circle;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+video {
+    padding-bottom: 20px;
+}
+
+article div form {
+    
+    margin:0 0 20px 20px;
+    width:200px;
+}
+.extra_input {
+	display:none;
+}
+/*----------------------------------------------------------*/
+footer {
+    bottom:0;
+    text-align: center;
+    background-color:#222;
+    color:#555;
+    clear:both;
+    position:fixed;
+    width:100%;
+    height: 30px;
+    font-family: Electrolize, sans-serif;
+}

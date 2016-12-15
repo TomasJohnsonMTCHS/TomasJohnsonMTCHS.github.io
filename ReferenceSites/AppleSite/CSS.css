@@ -1,0 +1,313 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html, body {
+}
+
+#nav {
+	position:relative;
+	text-align: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgba(0,0,0,1);
+}
+
+nav li {
+	display: inline-block;
+	margin: auto 1.7% auto 1.7%;
+}
+
+li a:hover {
+    color: #777;
+}
+
+.navIMG{
+	padding-top:2px;
+}
+/*-----------------------------------------------*/
+@media screen and (min-width: 960px){
+.Iphone7 {
+	position:absolute;
+	margin-left:46%;
+	width:7%;
+	top:120px;
+}
+.sectionIMG {
+	max-width:100%;
+ 	heigth: auto;
+ 	background: #000;
+	overflow: hidden;
+}
+.imglrgmain {
+	width:60%;
+	margin-left:20%;
+	margin-right:20%;
+	margin-bottom:-5%;
+}
+.mainSmall {
+	display:none;
+}
+
+.SubPromo div {
+	max-width:25%;
+    padding-top: 2px;
+    background: #fff;
+	overflow: hidden;
+	float:left;
+  }
+.subPromoIMG {
+    width: 120%;
+    margin-left: -10%;
+    display: inline-block;
+	height:170px;
+	
+}
+.redCross {
+	background-color:fff;
+	margin-left:35%;
+	display: inline-block;
+	height:55px;
+}
+
+.redCrossIMG{
+	padding: 5px 0 5px 0;
+	float:left;	
+}
+.redCross a{
+	float:right;
+}
+.redCross .split {
+	text-align:center;
+	padding: 0 10px 0 10px;
+	font-size:30px;
+	color:#DDD;
+}
+
+.lists {
+	background-color:#eee;
+	height: 300px;
+	clear:left;
+	
+}
+
+.lists div {
+	margin-left: 25%;
+	margin-right: 20%;
+}
+
+.lists div ul {
+	width:20%;
+	float:left;
+}
+
+.lists ul li {
+	color: #777;
+	list-style-type: none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:11px;
+	padding: 4px;
+	
+}
+
+.listTitle p {
+	color: #111;
+	padding-top:15px;
+}
+
+.SubFoot {
+	background-color:#eee;
+	height:80px;
+}
+.sublist {
+	float:left;
+	font-size:10px;
+	margin-left: 25%;
+	margin-right: 20%;
+	background-color:eee;
+	padding-top: 20px;
+}
+
+.blueHigh {
+	color:#0076C1;
+}
+.blueHigh:hover {
+	text-decoration:underline;
+}
+hr {
+	clear:both;
+	margin: 0 35% 0 25%;
+}
+}
+/*-------------------------------------------*/
+@media screen and (max-width: 960px){
+.Iphone7 {
+	position:absolute;
+	margin-left:46%;
+	width:14%;
+	top:120px;
+}
+.sectionIMG {
+	max-width:100%;
+ 	heigth: 90%;
+ 	background: #000;
+	overflow: hidden;
+}
+.imglrgmain {
+	display:none;
+}
+.mainSmall {
+	width:130%;
+	margin-left:-15%;
+	margin-right:-15%;
+	margin-bottom:-5%;
+}
+
+.SubPromo div {
+	max-width:50%;
+    padding-top: 2px;
+    background: #fff;
+	overflow: hidden;
+	float:left;
+  }
+.subPromoIMG {
+    width: 120%;
+    margin-left: -10%;
+    display: inline-block;
+	height:170px;
+	
+}
+
+.redCross {
+	margin-left:35%;
+	display: inline-block;
+	float:left;
+	height:55px;
+	background-color:fff;
+}
+
+.redCrossIMG{
+	padding: 5px 0 5px 0;	
+}
+.redCross a{
+	float:right;
+}
+.redCross .split {
+	text-align:center;
+	padding: 0 10px 0 10px;
+	font-size:30px;
+	color:#DDD;
+}
+
+.lists {
+	background-color:#eee;
+	height: 300px;
+	clear:left;
+	
+}
+
+.lists div {
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.lists div ul {
+	width:20%;
+	float:left;
+}
+
+.lists ul li {
+	color: #777;
+	list-style-type: none;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:11px;
+	padding: 4px;
+	
+}
+
+.listTitle p {
+	color: #111;
+	padding-top:15px;
+}
+
+.sublist {
+	float:left;
+	font-size:10px;
+	margin-right: 20%;
+	background-color:eee;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color:#888;
+	margin: 0 5% 0 5%;
+}
+.SubFoot {
+	background-color:#eee;
+	height:80px;
+	clear:left;	
+	
+}
+
+.blueHigh {
+	color:#0076C1;
+}
+.blueHigh:hover {
+	text-decoration:underline;
+}
+hr {
+	clear:both;
+	margin: 0 5% 0 5%;
+}
+}
+.footer {
+	padding: 0 15px 0 15px;	
+}
+.footer:hover {
+	text-decoration:underline;
+}
+
+.language {
+	float:right;
+}
+
+.watch {
+	text-decoration:none;
+	color:#ddd;	
+}
+
+.watch:hover {
+	color:#888;
+	text-decoration:none;
+}
+
+.watch:visited {
+	text-decoration:none;	
+}
+
+.lists li:hover {
+    text-decoration:underline;
+	color: #111;
+}
+
