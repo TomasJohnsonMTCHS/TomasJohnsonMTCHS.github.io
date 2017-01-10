@@ -251,3 +251,7 @@ img {
 	margin: 0 auto;
 	margin-top:7%;
 }
+
+.inPlink {
+	text-decoration: underline;	
+}
